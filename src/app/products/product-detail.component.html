@@ -1,5 +1,7 @@
 <div class="card">
-    <div class="card-header">
-        {{pageTitle}}
+    <div class="card-header" onclick="onBack">
+        {{pageTitle + " : " + product?.productName}}
     </div>
+    <button class="btn btn-outline-secondary" style="width:80px" (click)="onBack()">
+    <i class="fa fa-chevron-left"></i> Back</button>
 </div>
